@@ -1,0 +1,78 @@
+# ─── Python ────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+.eggs/
+pip-wheel-metadata/
+*.egg
+MANIFEST
+
+# ─── Virtual environments & package managers ───────────────────────────────
+.venv/
+venv/
+ENV/
+env/
+.uv/
+Pipfile.lock
+
+# Keep uv.lock (committed for reproducibility), ignore everything else local
+# uv.lock  -> DO NOT IGNORE (intentionally tracked)
+
+# ─── Testing, linting, typing ──────────────────────────────────────────────
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.pyright/
+.coverage
+coverage.xml
+htmlcov/
+*.cover
+.hypothesis/
+
+# ─── Project-generated artifacts (reproducible via `scripts/`) ─────────────
+# Full run outputs are regenerated locally; never commit them.
+artifacts/
+/results/
+
+# ─── Raw & sensitive data — MUST stay out of git ───────────────────────────
+# The 1.3 GB EasyCog-derived video NPZ collection lives OUTSIDE this repo:
+#   ../asreog_filter_order3_all_data/
+# See README "Data access" for how to obtain it. These rules are a safety net
+# in case data is ever copied inside the repo by accident.
+asreog_filter_order3_all_data/
+*.npz
+*.npy
+*.mat
+*.edf
+*.bdf
+*.fif
+*.xlsx
+*.xls
+*.csv.gz
+Patient_Info*.xlsx
+~$*.xlsx
+
+# Papers / large binaries (cite via DOI instead)
+*.pdf
+
+# ─── OS / editor / notebook noise ──────────────────────────────────────────
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.ipynb_checkpoints/
+*.code-workspace
+
+# ─── Logs & temp ───────────────────────────────────────────────────────────
+*.log
+*.tmp
+*.bak
+tmp/
+temp/

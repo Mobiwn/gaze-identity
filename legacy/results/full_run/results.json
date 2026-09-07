@@ -1,0 +1,598 @@
+[
+  {
+    "split_name": "low_to_high_A",
+    "split_info": {
+      "train_tasks": [
+        "task1",
+        "task2"
+      ],
+      "test_tasks": [
+        "task7",
+        "task8"
+      ],
+      "rationale": "Train on low cognitive load (scene/face viewing), test on high load (arithmetic/executive). Tests generalization under maximum cognitive shift."
+    },
+    "model_name": "logistic_regression",
+    "accuracy": 0.13043478260869565,
+    "balanced_accuracy": 0.13043478260869565,
+    "f1_macro": 0.08592132505175984,
+    "f1_weighted": 0.08592132505175984,
+    "random_baseline": 0.014492753623188406,
+    "n_subjects": 69
+  },
+  {
+    "split_name": "low_to_high_A",
+    "split_info": {
+      "train_tasks": [
+        "task1",
+        "task2"
+      ],
+      "test_tasks": [
+        "task7",
+        "task8"
+      ],
+      "rationale": "Train on low cognitive load (scene/face viewing), test on high load (arithmetic/executive). Tests generalization under maximum cognitive shift."
+    },
+    "model_name": "svm_rbf",
+    "accuracy": 0.13043478260869565,
+    "balanced_accuracy": 0.13043478260869565,
+    "f1_macro": 0.10241545893719807,
+    "f1_weighted": 0.10241545893719807,
+    "random_baseline": 0.014492753623188406,
+    "n_subjects": 69
+  },
+  {
+    "split_name": "low_to_high_A",
+    "split_info": {
+      "train_tasks": [
+        "task1",
+        "task2"
+      ],
+      "test_tasks": [
+        "task7",
+        "task8"
+      ],
+      "rationale": "Train on low cognitive load (scene/face viewing), test on high load (arithmetic/executive). Tests generalization under maximum cognitive shift."
+    },
+    "model_name": "random_forest",
+    "accuracy": 0.10144927536231885,
+    "balanced_accuracy": 0.10144927536231885,
+    "f1_macro": 0.06038647342995168,
+    "f1_weighted": 0.06038647342995168,
+    "random_baseline": 0.014492753623188406,
+    "n_subjects": 69
+  },
+  {
+    "split_name": "low_to_high_A",
+    "split_info": {
+      "train_tasks": [
+        "task1",
+        "task2"
+      ],
+      "test_tasks": [
+        "task7",
+        "task8"
+      ],
+      "rationale": "Train on low cognitive load (scene/face viewing), test on high load (arithmetic/executive). Tests generalization under maximum cognitive shift."
+    },
+    "model_name": "xgboost",
+    "accuracy": 0.028985507246376812,
+    "balanced_accuracy": 0.028985507246376812,
+    "f1_macro": 0.002214170692431562,
+    "f1_weighted": 0.002214170692431562,
+    "random_baseline": 0.014492753623188406,
+    "n_subjects": 69
+  },
+  {
+    "split_name": "low_to_high_B",
+    "split_info": {
+      "train_tasks": [
+        "task1",
+        "task3"
+      ],
+      "test_tasks": [
+        "task8",
+        "task9"
+      ],
+      "rationale": "Alternative low-to-high split to verify robustness."
+    },
+    "model_name": "logistic_regression",
+    "accuracy": 0.13043478260869565,
+    "balanced_accuracy": 0.13043478260869565,
+    "f1_macro": 0.0789855072463768,
+    "f1_weighted": 0.0789855072463768,
+    "random_baseline": 0.014492753623188406,
+    "n_subjects": 69
+  },
+  {
+    "split_name": "low_to_high_B",
+    "split_info": {
+      "train_tasks": [
+        "task1",
+        "task3"
+      ],
+      "test_tasks": [
+        "task8",
+        "task9"
+      ],
+      "rationale": "Alternative low-to-high split to verify robustness."
+    },
+    "model_name": "svm_rbf",
+    "accuracy": 0.10144927536231885,
+    "balanced_accuracy": 0.10144927536231885,
+    "f1_macro": 0.06935817805383021,
+    "f1_weighted": 0.06935817805383021,
+    "random_baseline": 0.014492753623188406,
+    "n_subjects": 69
+  },
+  {
+    "split_name": "low_to_high_B",
+    "split_info": {
+      "train_tasks": [
+        "task1",
+        "task3"
+      ],
+      "test_tasks": [
+        "task8",
+        "task9"
+      ],
+      "rationale": "Alternative low-to-high split to verify robustness."
+    },
+    "model_name": "random_forest",
+    "accuracy": 0.07246376811594203,
+    "balanced_accuracy": 0.07246376811594203,
+    "f1_macro": 0.046859903381642504,
+    "f1_weighted": 0.046859903381642504,
+    "random_baseline": 0.014492753623188406,
+    "n_subjects": 69
+  },
+  {
+    "split_name": "low_to_high_B",
+    "split_info": {
+      "train_tasks": [
+        "task1",
+        "task3"
+      ],
+      "test_tasks": [
+        "task8",
+        "task9"
+      ],
+      "rationale": "Alternative low-to-high split to verify robustness."
+    },
+    "model_name": "xgboost",
+    "accuracy": 0.014492753623188406,
+    "balanced_accuracy": 0.014492753623188406,
+    "f1_macro": 0.0006740815638692282,
+    "f1_weighted": 0.0006740815638692282,
+    "random_baseline": 0.014492753623188406,
+    "n_subjects": 69
+  },
+  {
+    "split_name": "high_to_low",
+    "split_info": {
+      "train_tasks": [
+        "task7",
+        "task8"
+      ],
+      "test_tasks": [
+        "task1",
+        "task2"
+      ],
+      "rationale": "Reverse direction: train on high load, test on low. Tests if high-load gaze patterns transfer to low-load."
+    },
+    "model_name": "logistic_regression",
+    "accuracy": 0.13043478260869565,
+    "balanced_accuracy": 0.13043478260869565,
+    "f1_macro": 0.09925340360122968,
+    "f1_weighted": 0.09925340360122968,
+    "random_baseline": 0.014492753623188406,
+    "n_subjects": 69
+  },
+  {
+    "split_name": "high_to_low",
+    "split_info": {
+      "train_tasks": [
+        "task7",
+        "task8"
+      ],
+      "test_tasks": [
+        "task1",
+        "task2"
+      ],
+      "rationale": "Reverse direction: train on high load, test on low. Tests if high-load gaze patterns transfer to low-load."
+    },
+    "model_name": "svm_rbf",
+    "accuracy": 0.13043478260869565,
+    "balanced_accuracy": 0.13043478260869565,
+    "f1_macro": 0.09953111679454389,
+    "f1_weighted": 0.09953111679454389,
+    "random_baseline": 0.014492753623188406,
+    "n_subjects": 69
+  },
+  {
+    "split_name": "high_to_low",
+    "split_info": {
+      "train_tasks": [
+        "task7",
+        "task8"
+      ],
+      "test_tasks": [
+        "task1",
+        "task2"
+      ],
+      "rationale": "Reverse direction: train on high load, test on low. Tests if high-load gaze patterns transfer to low-load."
+    },
+    "model_name": "random_forest",
+    "accuracy": 0.13043478260869565,
+    "balanced_accuracy": 0.13043478260869565,
+    "f1_macro": 0.11594202898550725,
+    "f1_weighted": 0.11594202898550725,
+    "random_baseline": 0.014492753623188406,
+    "n_subjects": 69
+  },
+  {
+    "split_name": "high_to_low",
+    "split_info": {
+      "train_tasks": [
+        "task7",
+        "task8"
+      ],
+      "test_tasks": [
+        "task1",
+        "task2"
+      ],
+      "rationale": "Reverse direction: train on high load, test on low. Tests if high-load gaze patterns transfer to low-load."
+    },
+    "model_name": "xgboost",
+    "accuracy": 0.028985507246376812,
+    "balanced_accuracy": 0.028985507246376812,
+    "f1_macro": 0.003864734299516908,
+    "f1_weighted": 0.003864734299516908,
+    "random_baseline": 0.014492753623188406,
+    "n_subjects": 69
+  },
+  {
+    "split_name": "medium_to_extremes",
+    "split_info": {
+      "train_tasks": [
+        "task4",
+        "task5"
+      ],
+      "test_tasks": [
+        "task1",
+        "task9"
+      ],
+      "rationale": "Train on medium load, test on both extremes (low + high). Tests transfer from middle cognitive demands."
+    },
+    "model_name": "logistic_regression",
+    "accuracy": 0.15942028985507245,
+    "balanced_accuracy": 0.15942028985507245,
+    "f1_macro": 0.1007591442374051,
+    "f1_weighted": 0.1007591442374051,
+    "random_baseline": 0.014492753623188406,
+    "n_subjects": 69
+  },
+  {
+    "split_name": "medium_to_extremes",
+    "split_info": {
+      "train_tasks": [
+        "task4",
+        "task5"
+      ],
+      "test_tasks": [
+        "task1",
+        "task9"
+      ],
+      "rationale": "Train on medium load, test on both extremes (low + high). Tests transfer from middle cognitive demands."
+    },
+    "model_name": "svm_rbf",
+    "accuracy": 0.13043478260869565,
+    "balanced_accuracy": 0.13043478260869565,
+    "f1_macro": 0.06909467344249952,
+    "f1_weighted": 0.06909467344249952,
+    "random_baseline": 0.014492753623188406,
+    "n_subjects": 69
+  },
+  {
+    "split_name": "medium_to_extremes",
+    "split_info": {
+      "train_tasks": [
+        "task4",
+        "task5"
+      ],
+      "test_tasks": [
+        "task1",
+        "task9"
+      ],
+      "rationale": "Train on medium load, test on both extremes (low + high). Tests transfer from middle cognitive demands."
+    },
+    "model_name": "random_forest",
+    "accuracy": 0.11594202898550725,
+    "balanced_accuracy": 0.11594202898550725,
+    "f1_macro": 0.0723708658491267,
+    "f1_weighted": 0.0723708658491267,
+    "random_baseline": 0.014492753623188406,
+    "n_subjects": 69
+  },
+  {
+    "split_name": "medium_to_extremes",
+    "split_info": {
+      "train_tasks": [
+        "task4",
+        "task5"
+      ],
+      "test_tasks": [
+        "task1",
+        "task9"
+      ],
+      "rationale": "Train on medium load, test on both extremes (low + high). Tests transfer from middle cognitive demands."
+    },
+    "model_name": "xgboost",
+    "accuracy": 0.043478260869565216,
+    "balanced_accuracy": 0.043478260869565216,
+    "f1_macro": 0.007821486082355647,
+    "f1_weighted": 0.007821486082355647,
+    "random_baseline": 0.014492753623188406,
+    "n_subjects": 69
+  },
+  {
+    "split_name": "same_level_low",
+    "split_info": {
+      "train_tasks": [
+        "task1",
+        "task2"
+      ],
+      "test_tasks": [
+        "task2",
+        "task3"
+      ],
+      "rationale": "Control: same cognitive level (low). Shows upper bound for within-level transfer."
+    },
+    "model_name": "logistic_regression",
+    "accuracy": 0.2318840579710145,
+    "balanced_accuracy": 0.2318840579710145,
+    "f1_macro": 0.17028985507246375,
+    "f1_weighted": 0.17028985507246375,
+    "random_baseline": 0.014492753623188406,
+    "n_subjects": 69
+  },
+  {
+    "split_name": "same_level_low",
+    "split_info": {
+      "train_tasks": [
+        "task1",
+        "task2"
+      ],
+      "test_tasks": [
+        "task2",
+        "task3"
+      ],
+      "rationale": "Control: same cognitive level (low). Shows upper bound for within-level transfer."
+    },
+    "model_name": "svm_rbf",
+    "accuracy": 0.2753623188405797,
+    "balanced_accuracy": 0.2753623188405797,
+    "f1_macro": 0.18723257418909595,
+    "f1_weighted": 0.18723257418909595,
+    "random_baseline": 0.014492753623188406,
+    "n_subjects": 69
+  },
+  {
+    "split_name": "same_level_low",
+    "split_info": {
+      "train_tasks": [
+        "task1",
+        "task2"
+      ],
+      "test_tasks": [
+        "task2",
+        "task3"
+      ],
+      "rationale": "Control: same cognitive level (low). Shows upper bound for within-level transfer."
+    },
+    "model_name": "random_forest",
+    "accuracy": 0.2028985507246377,
+    "balanced_accuracy": 0.2028985507246377,
+    "f1_macro": 0.15217391304347824,
+    "f1_weighted": 0.15217391304347824,
+    "random_baseline": 0.014492753623188406,
+    "n_subjects": 69
+  },
+  {
+    "split_name": "same_level_low",
+    "split_info": {
+      "train_tasks": [
+        "task1",
+        "task2"
+      ],
+      "test_tasks": [
+        "task2",
+        "task3"
+      ],
+      "rationale": "Control: same cognitive level (low). Shows upper bound for within-level transfer."
+    },
+    "model_name": "xgboost",
+    "accuracy": 0.014492753623188406,
+    "balanced_accuracy": 0.014492753623188406,
+    "f1_macro": 0.0013802622498274672,
+    "f1_weighted": 0.0013802622498274672,
+    "random_baseline": 0.014492753623188406,
+    "n_subjects": 69
+  },
+  {
+    "split_name": "same_level_high",
+    "split_info": {
+      "train_tasks": [
+        "task7",
+        "task8"
+      ],
+      "test_tasks": [
+        "task8",
+        "task9"
+      ],
+      "rationale": "Control: same cognitive level (high). Shows upper bound for within-level transfer at high load."
+    },
+    "model_name": "logistic_regression",
+    "accuracy": 0.11594202898550725,
+    "balanced_accuracy": 0.11594202898550725,
+    "f1_macro": 0.07391304347826086,
+    "f1_weighted": 0.07391304347826086,
+    "random_baseline": 0.014492753623188406,
+    "n_subjects": 69
+  },
+  {
+    "split_name": "same_level_high",
+    "split_info": {
+      "train_tasks": [
+        "task7",
+        "task8"
+      ],
+      "test_tasks": [
+        "task8",
+        "task9"
+      ],
+      "rationale": "Control: same cognitive level (high). Shows upper bound for within-level transfer at high load."
+    },
+    "model_name": "svm_rbf",
+    "accuracy": 0.15942028985507245,
+    "balanced_accuracy": 0.15942028985507245,
+    "f1_macro": 0.11964573268921094,
+    "f1_weighted": 0.11964573268921094,
+    "random_baseline": 0.014492753623188406,
+    "n_subjects": 69
+  },
+  {
+    "split_name": "same_level_high",
+    "split_info": {
+      "train_tasks": [
+        "task7",
+        "task8"
+      ],
+      "test_tasks": [
+        "task8",
+        "task9"
+      ],
+      "rationale": "Control: same cognitive level (high). Shows upper bound for within-level transfer at high load."
+    },
+    "model_name": "random_forest",
+    "accuracy": 0.11594202898550725,
+    "balanced_accuracy": 0.11594202898550725,
+    "f1_macro": 0.0821256038647343,
+    "f1_weighted": 0.0821256038647343,
+    "random_baseline": 0.014492753623188406,
+    "n_subjects": 69
+  },
+  {
+    "split_name": "same_level_high",
+    "split_info": {
+      "train_tasks": [
+        "task7",
+        "task8"
+      ],
+      "test_tasks": [
+        "task8",
+        "task9"
+      ],
+      "rationale": "Control: same cognitive level (high). Shows upper bound for within-level transfer at high load."
+    },
+    "model_name": "xgboost",
+    "accuracy": 0.014492753623188406,
+    "balanced_accuracy": 0.014492753623188406,
+    "f1_macro": 0.0010351966873706003,
+    "f1_weighted": 0.0010351966873706003,
+    "random_baseline": 0.014492753623188406,
+    "n_subjects": 69
+  },
+  {
+    "split_name": "all_low_to_all_high",
+    "split_info": {
+      "train_tasks": [
+        "task1",
+        "task2",
+        "task3"
+      ],
+      "test_tasks": [
+        "task7",
+        "task8",
+        "task9"
+      ],
+      "rationale": "Full low-to-high: use all 3 low tasks for train, all 3 high tasks for test."
+    },
+    "model_name": "logistic_regression",
+    "accuracy": 0.11594202898550725,
+    "balanced_accuracy": 0.11594202898550725,
+    "f1_macro": 0.0790200138026225,
+    "f1_weighted": 0.0790200138026225,
+    "random_baseline": 0.014492753623188406,
+    "n_subjects": 69
+  },
+  {
+    "split_name": "all_low_to_all_high",
+    "split_info": {
+      "train_tasks": [
+        "task1",
+        "task2",
+        "task3"
+      ],
+      "test_tasks": [
+        "task7",
+        "task8",
+        "task9"
+      ],
+      "rationale": "Full low-to-high: use all 3 low tasks for train, all 3 high tasks for test."
+    },
+    "model_name": "svm_rbf",
+    "accuracy": 0.11594202898550725,
+    "balanced_accuracy": 0.11594202898550725,
+    "f1_macro": 0.0855072463768116,
+    "f1_weighted": 0.0855072463768116,
+    "random_baseline": 0.014492753623188406,
+    "n_subjects": 69
+  },
+  {
+    "split_name": "all_low_to_all_high",
+    "split_info": {
+      "train_tasks": [
+        "task1",
+        "task2",
+        "task3"
+      ],
+      "test_tasks": [
+        "task7",
+        "task8",
+        "task9"
+      ],
+      "rationale": "Full low-to-high: use all 3 low tasks for train, all 3 high tasks for test."
+    },
+    "model_name": "random_forest",
+    "accuracy": 0.10144927536231885,
+    "balanced_accuracy": 0.10144927536231885,
+    "f1_macro": 0.05824706694271912,
+    "f1_weighted": 0.05824706694271912,
+    "random_baseline": 0.014492753623188406,
+    "n_subjects": 69
+  },
+  {
+    "split_name": "all_low_to_all_high",
+    "split_info": {
+      "train_tasks": [
+        "task1",
+        "task2",
+        "task3"
+      ],
+      "test_tasks": [
+        "task7",
+        "task8",
+        "task9"
+      ],
+      "rationale": "Full low-to-high: use all 3 low tasks for train, all 3 high tasks for test."
+    },
+    "model_name": "xgboost",
+    "accuracy": 0.0,
+    "balanced_accuracy": 0.0,
+    "f1_macro": 0.0,
+    "f1_weighted": 0.0,
+    "random_baseline": 0.014492753623188406,
+    "n_subjects": 69
+  }
+]

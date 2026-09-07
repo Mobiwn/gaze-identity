@@ -1,0 +1,25 @@
+{
+  "cohort": {
+    "session_policy": "earliest_valid",
+    "minimum_picture_samples": 100,
+    "maximum_missing_fraction": 1.0
+  },
+  "protocol": {
+    "name": "task_disjoint_baseline",
+    "train_tasks": ["task1", "task2"],
+    "validation_tasks": ["task3"],
+    "test_tasks": ["task7", "task8"]
+  },
+  "features": {
+    "sampling_rate_hz": 125.0,
+    "velocity_threshold_px_s": 30.0,
+    "minimum_fixation_duration_s": 0.1,
+    "histogram_bins": 20
+  },
+  "experiment": {
+    "seed": 42,
+    "bootstrap_resamples": 1000,
+    "permutation_resamples": 1000,
+    "top_k": 5
+  }
+}
